@@ -88,3 +88,9 @@ class ApiClient(object):
     
     def list_sql_warehouse(self):
         return self.get('sql/warehouses')
+    
+    def list_tokens(self):
+        return self.get('token-management/tokens')
+    
+    def get_token_info(self, token_id):
+        return self.get('token-management/tokens/'+token_id)
