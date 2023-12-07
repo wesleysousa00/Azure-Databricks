@@ -1,4 +1,5 @@
 # Vacuum routine for cleaning files > 7 days
+num_hours = 168 
 
 from delta.tables import *
 
